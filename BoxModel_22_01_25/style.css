@@ -1,0 +1,55 @@
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's width/height */
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light gray background for contrast */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px; /* Restrict the container's width */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    color: #4CAF50; /* Green color for the main title */
+    margin-bottom: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff; /* White background for the card */
+    padding: 20px; /* Space inside the card (between content and border) */
+    border: 2px solid #4CAF50; /* Green border to highlight the box */
+    margin-bottom: 20px; /* Space outside the card (separates cards vertically) */
+    border-radius: 10px; /* Smooth rounded corners */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); *//* Subtle shadow for depth */
+}
+
+/* Card Title Styling */
+.card h2 {
+    margin-bottom: 10px; /* Space below the card title */
+    color: #4CAF50; /* Green color for the title */
+}
+
+/* Card Paragraph Styling */
+.card p {
+    color: #555; /* Gray color for the paragraph text */
+    font-size: 16px;
+    margin-top: 10px; /* Space between paragraph and card title */
+}
+
+

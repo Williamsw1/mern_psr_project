@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Resume Container */
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the resume */
+    background-color: #ffffff; /* White background for the resume */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a clean look */
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #4CAF50; /* Green line to separate header */
+    padding-bottom: 10px; */
+    margin-bottom: 20px;*/
+}
+
+.header h1 {
+    color: #4CAF50; /* Green color for the name */
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #4CAF50; /* Green color for headings */
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ddd; /* Light gray underline */
+    padding-bottom: 5px;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for alternating rows */
+}
+
+table tr:hover {
+    background-color: #eafaf1; /* Very light green on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
