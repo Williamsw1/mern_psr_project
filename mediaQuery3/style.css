@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #0077b6;
+    font-size: 24px;
+}
+
+/* Section Styling */
+main {
+    max-width: 800px;
+    text-align: center;
+}
+
+h2 {
+    color: #005f86;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Responsive Image Styling */
+.responsive-image {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.responsive-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Media Queries */
+
+/* For tablets (768px and larger) */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .responsive-image {
+        max-width: 80%; /* Reduce the maximum width of the image */
+    }
+}
+
+/* For laptops (1024px and larger) */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .responsive-image {
+        max-width: 60%; /* Further limit the image width */
+    }
+}
+
+/* For desktops (1200px and larger) */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .responsive-image {
+        max-width: 50%; /* Even smaller width for large desktops */
+    }
+}

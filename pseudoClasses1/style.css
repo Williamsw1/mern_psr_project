@@ -1,0 +1,67 @@
+/* Link Pseudo-Classes */
+a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red; /* Changes color when hovered */
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    color: purple; /* Changes color after the link is visited */
+  }
+  
+  /* Button Pseudo-Class */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darkens on hover */
+  }
+  
+  button:active {
+    background-color: #2e7031; /* Darker shade on click */
+  }
+  
+  /* List Pseudo-Classes */
+  ul li:first-child {
+    color: red; /* Styles the first list item */
+  }
+  
+  ul li:last-child {
+    color: green; /* Styles the last list item */
+  }
+  
+  ul li:nth-child(2) {
+    color: blue; /* Styles the second list item */
+  }
+  
+  /*
+  :hover:
+
+Styles the element when the user hovers over it (e.g., link or button).
+:visited:
+
+Styles links after they’ve been clicked (visited).
+:active:
+
+Styles an element while it's being clicked or activated (e.g., a button).
+:first-child:
+
+Targets the first child of its parent (e.g., the first <li>).
+:last-child:
+
+Targets the last child of its parent (e.g., the last <li>).
+:nth-child(n):
+
+Targets specific children based on their order (e.g., the second <li>).
+How It Works in the Browser
+  */

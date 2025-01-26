@@ -34,9 +34,9 @@ h1 {
     background-color: #ffffff; /* White background for the card */
     padding: 20px; /* Space inside the card (between content and border) */
     border: 2px solid #4CAF50; /* Green border to highlight the box */
-    margin-bottom: 20px; /* Space outside the card (separates cards vertically) */
+    margin-bottom: 20px;  /* Space outside the card (separates cards vertically) */
     border-radius: 10px; /* Smooth rounded corners */
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); *//* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Card Title Styling */

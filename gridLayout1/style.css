@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .gallery {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+    grid-template-columns: repeat(4, 1fr);  /* Creates 3 equal columns */
+   /* grid-template-rows:repeat(auto-fit,minmax(150px,1fr)); */
+    gap: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .item {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  

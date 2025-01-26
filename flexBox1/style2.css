@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    height:40px;
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust size as needed */
+    width: auto;  /* Maintain aspect ratio */
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    color: white;
+    cursor: pointer;
+
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+ 
+  .menu-item:hover {
+    transform: scale(1.2);
+  }
+
+  .menu-item:nth-child(1):hover {
+    color: hsl(60, 4%, 5%); /* Change to tomato color for "About" */
+  }
+  
+  .menu-item:nth-child(2):hover {
+    color: #c0aba7; /* Change to tomato color for "About" */
+  }
+  
+  .menu-item:nth-child(3):hover {
+    color: #010b15; /* Change to dodger blue for "Services" */
+  }
+  
+  .menu-item:nth-child(4):hover {
+    color: #06b0ce; /* Change to lime green for "Contact" */
+  }
+

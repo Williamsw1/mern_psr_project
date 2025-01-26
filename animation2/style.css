@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f0f0f0;
+}
+.container{
+    text-align: center;
+}
+.animated-button{
+    padding:15px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border:none;
+    border-radius: 3px;
+    cursor:pointer;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+/* Bouncing animation */
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+.animated-button:hover{
+    background-color: #a88592;
+}

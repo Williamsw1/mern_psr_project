@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar with Feedback Form</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#web-design">Web Design</a></li>
+                        <li><a href="#seo">SEO</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sidebar Toggle -->
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-checkbox">
+    <aside class="sidebar">
+        <label for="sidebar-toggle" class="close-btn">&times;</label>
+        <h2>Sidebar</h2>
+        <ul class="sidebar-menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#">Option 4</a></li>
+            <li><a href="#">Option 5</a></li>
+        </ul>
+    </aside>
+
+    <!-- Open Sidebar Button -->
+    <label for="sidebar-toggle" class="menu-btn">☰ Open Menu</label>
+
+    <!-- Feedback Form -->
+    <main class="feedback-form">
+        <h1>Feedback Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Enter your feedback here" draggable="true" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </main>
+</body>
+</html>

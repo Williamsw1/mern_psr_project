@@ -1,0 +1,117 @@
+/*
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+
+    background-color: #333;
+    color:white;
+    padding:10px 20px;
+    
+}
+.logo img{
+    height:40px;
+    width:auto;
+}
+.menu-item{
+    display:flex;
+    gap:20px;
+}
+
+.menu1{
+    cursor:pointer;
+    color:white;
+}
+.menu1:hover{
+    text-decoration:underline;
+}
+
+*/
+
+/*
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-start; /* Align the menu items to the top */
+    justify-content: flex-start; /* Align items to the left */
+    flex-direction: column; /* Stack the elements vertically */
+    background-color: #333;
+    color: white;
+    height: 100vh; /* Full height for the vertical navigation */
+    padding: 20px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px; /* Add space below the logo */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 10px; /* Add space between menu items */
+}
+
+.menu1 {
+    cursor: pointer;
+    color: white;
+}
+
+.menu1:hover {
+    text-decoration: underline;
+}
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background for the body */
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-start; /* Align menu items to the top */
+    justify-content: flex-start; /* Align items to the left */
+    flex-direction: column; /* Stack elements vertically */
+    background-color: #333; /* Dark background for the navbar */
+    color: white;
+    height: 100vh; /* Full height for vertical navigation */
+    width: 200px; /* Fixed width for the navbar */
+    padding: 20px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px; /* Add space below the logo */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 10px; /* Add space between menu items */
+}
+
+.menu1 {
+    cursor: pointer;
+    color: white;
+    background-color: #555; /* Background color for each menu item */
+    padding: 10px 15px; /* Add padding for better click area */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.menu1:hover {
+    background-color: #1abc9c; /* Change background color on hover */
+    text-decoration: none; /* Ensure no underline appears */
+}

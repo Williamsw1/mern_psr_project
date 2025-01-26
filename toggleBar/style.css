@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar Styling */
+header {
+    background: #0077b6;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #005f86;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu for Navigation Bar */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.dropdown-menu li a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #005f86;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: #34495e;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px; /* Offset for the fixed navigation bar */
+}
+
+.sidebar h2 {
+    color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar-menu li {
+    margin: 10px 0;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #27ae60;
+}
+
+/* Sidebar Toggle Logic */
+.sidebar-checkbox {
+    display: none;
+}
+
+.sidebar-checkbox:checked ~ .sidebar {
+    left: 0; /* Sidebar slides in */
+}
+
+.sidebar-checkbox:checked ~ .menu-btn {
+    display: none; /* Hide the open menu button when sidebar is visible */
+}
+
+.sidebar-checkbox:checked ~ .feedback-form {
+    transform: translateX(250px); /* Move the feedback form to the right */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Close Button */
+.close-btn {
+    font-size: 24px;
+    color: #ecf0f1;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* Menu Button Styling */
+.menu-btn {
+    font-size: 18px;
+    color: #fff;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 70px; /* Positioned below the navigation bar */
+    left: 20px;
+    z-index: 1100;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    flex-grow: 1;
+    margin: 100px 20px 20px 20px; /* Offset for the fixed navigation bar */
+    padding: 20px;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feedback-form h1 {
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    resize: both; /* Allow draggable resizing */
+    min-height: 100px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #005f86;
+}

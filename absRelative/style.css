@@ -1,0 +1,162 @@
+body {
+    margin: 100px auto;
+  }
+  
+  .parent {
+    width: 500px;
+    border: 1px solid red;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .child {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+ /* 
+  .one {
+    background-color: powderblue;
+  }
+*/
+/*
+.one {
+    background-color: powderblue;
+    position: relative;
+    right: 50px;
+  }
+*/
+  .one {
+    background-color: powderblue;
+    position: relative;
+    top: 150px;
+  }
+  
+  .two {
+    background-color: royalblue;
+    position: relative;
+    bottom: 120px;
+  }
+/*
+  .two {
+    background-color: royalblue;
+  }
+ 
+  */
+  
+  .three {
+    background-color: sienna;
+  }
+  
+  .four {
+    background-color: slateblue;
+  }
+
+
+/* The position property isn't declared in the above code and
+ it therefore reverts to the default position: static.
+ It follows the order of the HTML code.
+ These properties have no effect on position: static.
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body{
+    margin:20px;
+    background-color: #f4f49f;
+    font-family:Arial,sans-serif;
+}
+.relative-box{
+    position:relative;
+    width:150px;
+    height:150px;
+    background-color: #3498db;
+    color:white;
+    padding:20px;
+    margin:20px;
+    border:2px solid #2980b9;
+
+}
+
+.absolute-box{
+    position:absolute;
+    top:50px;
+    background-color: #e74c3c;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    
+    /*display:flex;*/
+
+} */
+   
+   
+   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8f1f5;
+  }
+  
+  .relative-box {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1; /* Ensures this is on top */
+  }
+  
+  .absolute-child {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f1c40f;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2; /* Brings this layer above the relative box */
+  }
+  

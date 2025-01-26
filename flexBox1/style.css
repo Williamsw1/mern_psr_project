@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    height:40px;
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust size as needed */
+    width: auto;  /* Maintain aspect ratio */
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    color: white;
+    cursor: pointer;
+
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+ 
+
+
+  .menu-item:hover {
+    transform: scale(1.2); /* Enlarges the hovered item */
+    color: #ffd700; /* Gold color for hovered item */
+  }
+
+  .menu-item:not(:hover) {
+    transform: scale(0.9); /* Shrink when not hovered */
+    transition: transform 0.3s ease; /* Smooth transition for shrinking */
+  }
+
+
+
+
+
+  
+  /*
+  .menu-item:nth-child(1):hover.menu-item {
+    transform: scale(0.9); /* Shrinks others when hovering on "Home" */
+  }
+  */
+
+
+  /*
+  .menu-item:nth-child(2):hover.menu-item {
+    transform: scale(0.9); /* Shrinks others when hovering on "About" */
+  }
+*/
+
+
+/*
+  .menu-item:nth-child(3):hover.menu-item {
+    transform: scale(0.9); /* Shrinks others when hovering on "Services" */
+  }
+*/
+
+
+/*
+  .menu-item:nth-child(4):hover.menu-item {
+    transform: scale(0.9); /* Shrinks others when hovering on "Contact" */
+  }
+  
+ */
+
+
+
+  /*
+  .menu-item:hover {
+    text-decoration: underline;
+  }
+ */
+  

@@ -1,0 +1,82 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Title Styling */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* List Styling */
+.animated-list {
+    list-style: disc; /* Default marker type (disc) */
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.animated-list li {
+    margin-bottom: 15px;
+    position: relative;
+    animation: bounceMarker 2s infinite; /* Apply the bounce animation to markers */
+}
+
+/* Marker Animation */
+.animated-list li::marker {
+    font-size: 1.5em; /* Make the marker larger */
+    color: #3498db; /* Initial marker color */
+    animation: markerColorChange 2s infinite; /* Animate the marker's color */
+}
+
+/* Keyframes for Bouncing Markers */
+@keyframes bounceMarker {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Slight upward bounce */
+    }
+}
+
+/* Keyframes for Marker Color Change */
+@keyframes markerColorChange {
+    0% {
+        color: #3498db; /* Blue */
+    }
+    50% {
+        color: #e74c3c; /* Red */
+    }
+    100% {
+        color: #3498db; /* Blue */
+    }
+}
+
+/* Fade-in Animation for the Entire List */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
